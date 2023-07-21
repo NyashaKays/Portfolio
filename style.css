@@ -5,11 +5,20 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    width: 100vw;
+    background-image: url(Assets/Images/7680x4320-black-solid-color-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 .intro{
     display: flex;
     width: 100vw;
     height: 100vh;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .content{
@@ -19,6 +28,7 @@
     flex-direction: column;
     text-align: left;
     justify-content: left;
+    color: aliceblue;
 }
 
 .content h1{
@@ -27,7 +37,7 @@
 }
 
 .content h2{
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 700;
 }
 
@@ -53,13 +63,163 @@
 .social-btn{
     display: grid;
     place-items: center;
+    min-height: 3em;
+    min-width: 3em;
     height: 3em;
     width: 3em;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .social-btn a{
     color: white;
     font-size: 1.1em;
+}
+
+.content a button{
+    margin-top: 10px;
+    color: #E92C0C;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 10px 0px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.profile-pic{
+    height: 50em;
+    opacity: 10%;
+}
+
+.skills-container{
+    margin-top: 10px;
+    margin-left: 15px;
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    color: aliceblue;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.zvikiri-container{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.languages{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+}
+
+.card{
+    height: 15.5em;
+    width: 15em;
+    background-color: #505351;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.card h3{
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.card .icon{
+    font-size: 2em;
+}
+
+.fa-c{
+    color: #000044;
+}
+
+.fa-java{
+    color: #000044;
+}
+
+.fa-js{
+    color: #ffc401;
+}
+
+.fa-html5{
+    color: #E92C0C;
+}
+
+.fa-css3-alt{
+    color: #030377;
+}
+
+.fa-python{
+    color: #000044;
+}
+
+.fa-file-code{
+    color: #510058;
+}
+
+.fa-korvue{
+    color: #a0005d;
+}
+
+.fa-php{
+    color: #3c0058;
+}
+
+.fa-react{
+    color: #0086df;
+}
+
+.icon-container{
+    padding: 10px;
+    float: left;
+}
+[class*="eicon-"] {
+    display: block;
+}
+[class*="eicon-"]::before{
+    content: '';
+    display: block;
+    width: 1em;
+    height: 1em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+}
+
+.eicon-photoshop{
+    font-size: 2em;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' %3F%3E%3Csvg data-name='Layer 1' id='Layer_1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23001d23;%7D.cls-2%7Bfill:%2301c8fe;%7D%3C/style%3E%3C/defs%3E%3Crect class='cls-1' height='419.17' rx='96.06' width='432' x='40' y='46.42'/%3E%3Crect class='cls-1' height='379.17' rx='76.06' width='392' x='60' y='66.42'/%3E%3Cpath class='cls-2' d='M147.92,166.71c0-1.53.25-2,1.52-2,10.42-.25,30.48-.76,49.79-.76,51.31,0,69.1,28.45,69.1,56.14,0,41.16-31.76,58.68-70.88,58.68H183v50c0,1.27-.51,2-2,2H149.69c-1.27,0-1.77-.76-1.77-2ZM183,247.49c4.32.25,7.11.25,14.23.25,20.07,0,36.07-6.1,36.07-26.93,0-16-10.92-26.16-33-26.16-8.13,0-15,.25-17.28.51Z'/%3E%3Cpath class='cls-2' d='M333.6,230.21c-11.94,0-15.75,4.32-15.75,8.64s3.31,7.62,18,13.21c30.74,11.18,40.39,23.12,40.39,41.15,0,24.14-18.8,40.14-52.33,40.14-15.49,0-29-2.8-36.83-7.11a3,3,0,0,1-1.78-2.8V296c0-1.53,1-2.29,2-1.53,11.69,7.37,25.91,10.16,37.34,10.16,11.94,0,17.28-3.3,17.28-8.63,0-4.83-4.32-8.39-19.31-14-28.7-10.67-38.1-22.87-38.1-41.16,0-19.81,16-38.86,49.53-38.86,15,0,26.68,2,33,5.08a3.25,3.25,0,0,1,1.77,3.3v25.4c0,1.53-1,2.54-2.54,1.78C358,233.26,345,230.21,333.6,230.21Z'/%3E%3C/svg%3E");
+}
+
+.eicon-xd{
+    font-size: 2em;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' %3F%3E%3Csvg data-name='Layer 1' id='Layer_1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%232e0020;%7D.cls-2%7Bfill:%23fbdaf1;%7D%3C/style%3E%3C/defs%3E%3Crect class='cls-1' height='419.17' rx='96.06' width='432' x='40' y='46.42'/%3E%3Crect class='cls-1' height='379.17' rx='76.06' width='392' x='60' y='66.42'/%3E%3Cpath class='cls-2' d='M211.41,245,261.71,328a1.73,1.73,0,0,1-1.27,2.8H224.37c-2.29,0-3.56-.76-4.32-2.29-11.18-19.81-22.36-39.63-33.79-60.46H186c-10.16,20.33-21.34,40.9-32,60.72a3.41,3.41,0,0,1-3.56,2H116.15c-1.78,0-1.78-1.53-1-2.54l48.78-80.78L116.15,167a1.52,1.52,0,0,1,1.27-2.54h35.82c1.78,0,2.54.25,3.3,2,10.16,20.07,22.1,40.14,32.52,60.21h.25c9.91-20.33,21.08-39.89,31.5-60.21.76-1.27,1.27-2,3.56-2h32.77c1.77,0,2,1.27,1,2.79Z'/%3E%3Cpath class='cls-2' d='M264.75,268.83c0-36.33,27.18-66.81,73.67-66.81,2,0,4.57.25,8.38.5v-50a1.61,1.61,0,0,1,1.78-1.78h32c1.27,0,1.52.51,1.52,1.53V302.36a143.58,143.58,0,0,0,1,18.54c0,1.27-.26,1.78-1.78,2.29a127.72,127.72,0,0,1-50,10.16C293.71,333.35,264.75,312,264.75,268.83Zm82.05-36.08c-2.54-1-5.84-1.27-9.4-1.27-19.56,0-36.32,11.94-36.32,35.57,0,25.15,14.48,36.07,33.78,36.07,4.32,0,8.39-.25,11.94-1.53Z'/%3E%3C/svg%3E");
+}
+
+.eicon-Illustrator{
+    font-size: 2em;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' %3F%3E%3Csvg data-name='Layer 1' id='Layer_1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23271302;%7D.cls-2%7Bfill:%23ff7c01;%7D%3C/style%3E%3C/defs%3E%3Crect class='cls-1' height='419.17' rx='96.06' width='432' x='40' y='46.42'/%3E%3Crect class='cls-1' height='379.17' rx='76.06' width='392' x='60' y='66.42'/%3E%3Cpath class='cls-2' d='M191.35,291.18l-12.19,37.6a2.75,2.75,0,0,1-2.79,2H146.9c-1.78,0-2.29-1-2-2.54l50.8-146.58c1-2.79,2-5.84,2.54-15.49a1.7,1.7,0,0,1,1.53-1.78h40.64c1.27,0,1.78.25,2,1.52l57.67,162.58c.51,1.27.25,2.29-1.27,2.29h-33A2.56,2.56,0,0,1,263,329l-13-37.85Zm49.29-31.75c-5.08-16.77-15.25-47.51-20.07-65.54h-.26c-4.06,17-13.21,45-19.81,65.54Z'/%3E%3Cpath class='cls-2' d='M315.32,171.28c0-11.43,8.38-19.56,19.81-19.56,12.19,0,19.56,8.13,19.56,19.56,0,11.94-7.87,19.81-19.81,19.81S315.32,183.22,315.32,171.28Zm1.77,35.31c0-1.27.51-2,2-2h31.24c1.53,0,2,.5,2,2V328.52c0,1.53-.25,2.29-2.28,2.29H319.63c-1.77,0-2.54-.76-2.54-2.29Z'/%3E%3C/svg%3E");
+}
+
+.eicon-Lightroom{
+    font-size: 2em;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' %3F%3E%3Csvg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23231f20;%7D.cls-2%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Ctitle/%3E%3Cg data-name='01 - PS' id='_01_-_PS'%3E%3Crect class='cls-1' height='33.92' rx='3' width='33.92' x='7.04' y='7.04'/%3E%3Cpath class='cls-2' d='M13.63,15.66h3.12V29.75h8.44l-.37,2.59H13.63Z'/%3E%3Cpath class='cls-2' d='M27.33,23.31c0-1.4,0-2.46,0-3.37h2.94c0,.31.08,1.45.08,2.3a4.09,4.09,0,0,1,4.05-2.58v2.89c-2.51,0-4.05.87-4.05,4.18v5.61h-3Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.eicon-blender{
+    font-size: 2em;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' %3F%3E%3Csvg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle/%3E%3Cpath d='M12.51 13.214c.046-.8.438-1.506 1.03-2.006a3.424 3.424 0 0 1 2.212-.79c.85 0 1.631.3 2.211.79.592.5.983 1.206 1.028 2.005.045.823-.285 1.586-.865 2.153a3.389 3.389 0 0 1-2.374.938 3.393 3.393 0 0 1-2.376-.938c-.58-.567-.91-1.33-.865-2.152M7.35 14.831c.006.314.106.922.256 1.398a7.372 7.372 0 0 0 1.593 2.757 8.227 8.227 0 0 0 2.787 2.001 8.947 8.947 0 0 0 3.66.76 8.964 8.964 0 0 0 3.657-.772 8.285 8.285 0 0 0 2.785-2.01 7.428 7.428 0 0 0 1.592-2.762 6.964 6.964 0 0 0 .25-3.074 7.123 7.123 0 0 0-1.016-2.779 7.764 7.764 0 0 0-1.852-2.043h.002L13.566 2.55l-.02-.015c-.492-.378-1.319-.376-1.86.002-.547.382-.609 1.015-.123 1.415l-.001.001 3.126 2.543-9.53.01h-.013c-.788.001-1.545.518-1.695 1.172-.154.665.38 1.217 1.2 1.22V8.9l4.83-.01-8.62 6.617-.034.025c-.813.622-1.075 1.658-.563 2.313.52.667 1.625.668 2.447.004L7.414 14s-.069.52-.063.831zm12.09 1.741c-.97.988-2.326 1.548-3.795 1.55-1.47.004-2.827-.552-3.797-1.538a4.51 4.51 0 0 1-1.036-1.622 4.282 4.282 0 0 1 .282-3.519 4.702 4.702 0 0 1 1.153-1.371c.942-.768 2.141-1.183 3.396-1.185 1.256-.002 2.455.41 3.398 1.175.48.391.87.854 1.152 1.367a4.28 4.28 0 0 1 .522 1.706 4.236 4.236 0 0 1-.239 1.811 4.54 4.54 0 0 1-1.035 1.626'/%3E%3C/svg%3E");
 }
