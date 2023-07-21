@@ -36,6 +36,12 @@
     font-weight: 400;
 }
 
+.content p a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
 .social-container{
     margin-top: 15px;
     display: flex;
