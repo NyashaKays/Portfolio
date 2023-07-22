@@ -58,6 +58,7 @@ nav ul li a .contact{
 }
 
 .logo h3 span{
+    font-size: 1em;
     color: #E92C0C;
 }
 
@@ -78,7 +79,7 @@ nav ul li a .contact{
     text-align: left;
     justify-content: left;
     color: aliceblue;
-
+    
     transform: translateX(-10%);
 }
 
