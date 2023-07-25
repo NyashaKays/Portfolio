@@ -25,6 +25,7 @@ nav{
 }
 
 nav ul{
+    list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -144,6 +145,31 @@ footer button{
     color: #E92C0C;
 }
 
+.content h1 #textCycle{
+    color: #E92C0C;
+}
+
+#textCycle{
+    border-right: solid 5px rgb(255, 255, 255);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#textCycle{
+    animation:  animated-text 4s steps(13,end) 1s 1 normal both,
+                animated-cursor 600ms steps(13,end) infinite;
+}
+
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 472px;}
+}
+
+@keyframes animated-cursor{
+    from{border-right-color: rgb(138, 139, 138);}
+    to{border-right-color: transparent;}
+}
+
 .social-container{
     margin-top: 15px;
     display: flex;
@@ -214,6 +240,10 @@ footer button{
     flex-wrap: wrap;
     height: 100vh;
     width: 100vw;
+}
+
+.Services h1{
+    color: aliceblue;
 }
 
 .Services h2{
@@ -478,3 +508,4 @@ form textarea{
     border-radius: 5px;
     margin-top: 15px;
 }
+
