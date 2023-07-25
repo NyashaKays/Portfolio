@@ -11,6 +11,21 @@ window.onload = function(){
         counter = 0;
         }
     }
+
+    window.addEventListener('scroll', function (e) {
+        if(window.pageYOffset > 250){
+            this.document.getElementById('totop').classList.add('active');
+        } else{
+            this.document.getElementById('totop').classList.remove('active');
+        }})
+
+    document.getElementById('totop').addEventListener("click", function(){
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
+    });
 }
 
 
