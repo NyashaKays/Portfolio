@@ -6,8 +6,9 @@
 }
 
 body{
+    margin: 0;
     display: block;
-    width: fit-content;
+    width: 100%;
     background: #323232;
     background: -webkit-linear-gradient(0deg, #323232 0%, #000000 100%);
     background: linear-gradient(0deg, #323232 0%, #000000 100%);
@@ -15,6 +16,26 @@ body{
 
 header{
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.logo-img{
+    width: 4em;
+}
+
+header.active{
+    background-color: #000000;
+}
+
+.mobile-nav{
+    display: none;
 }
 
 nav{
@@ -52,6 +73,69 @@ nav ul li a .contact-btn{
     cursor: pointer;
 }
 
+.hamburger{
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar, .hamburger::after, .hamburger::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.hamburger.is-active::before{
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.hamburger.is-active::after{
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar{
+    opacity: 0;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 70px;
+    z-index: 98;
+    background-color: #000000;
+    padding-top: 120px;
+    transition: 0.5s;
+}
+
+.mobile-nav{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50%;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.mobile-nav ul{
+    display: block;
+}
+
+.mobile-nav.is-active{
+    left: 0;
+}
+
 footer{
     margin: 0;
     width: 100%;
@@ -65,6 +149,26 @@ footer .copyrights{
     font-size: 1em;
     font-weight: 400;
     margin: 15px;
+}
+
+@media(max-width: 767px){
+    body{
+        width: 100vw;
+    }
+
+    nav{
+        display: none;
+    }
+}
+
+@media(min-width: 767px){
+    .mobile-nav{
+        display: none;
+    }
+
+    .hamburger{
+        display: none;
+    }
 }
 
 .logo{
@@ -85,13 +189,14 @@ footer .copyrights{
 
 .hero{
     margin-top: 5%;
-    display: grid;
-    width: 100%;
-    height: fit-content;
-    place-items: center;
-    place-content: center;
-    grid-template-columns: repeat(2, 2fr);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
+
+
 
 .content{
     display: flex;
@@ -454,6 +559,24 @@ form input{
     padding: 10px 35px;
 }
 
+form input:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+form input:focus{
+    background-color: #323232;
+    border: 2px solid #E92C0C;
+}
+
+form textarea:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+form textarea:focus{
+    background-color: #323232;
+    border: 2px solid #E92C0C;
+}
+
 ::-webkit-input-placeholder{
     color: aliceblue;
     position: fixed;
@@ -466,6 +589,60 @@ form textarea{
     border: 2px solid aliceblue;
     border-radius: 5px;
     margin-top: 5px;
+}
+
+form button{
+    color: aliceblue;
+    background-color: #E92C0C;
+    padding: 10px 100px;
+    border: none;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+form button:hover{
+    cursor: pointer;
+    background-color: #e94b0c;
+}
+
+.contact-btns{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-btns a{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 15px;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255,255,255,0.15);
+    font-size: 1.5em;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.contact-btns a:hover{
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.alt{
+    padding-bottom: 5px;
+    border-bottom: 3px solid #E92C0C;
+}
+
+.contact-btns a span{
+    margin: 15px;
+    border-right: 1px solid #E92C0C;
+    height: 15px;
 }
 
 #totop{
@@ -488,3 +665,24 @@ form textarea{
 #totop.active{
     display: flex;
 }
+
+@media(max-width: 767px){
+    h1{
+        font-size: 1.5em;
+
+    }
+
+    h2{
+        font-size: 1em;
+    }
+
+    h3{
+        font-size: 1em;
+    }
+
+    .content{
+        transform: none;
+        margin-left: 5%;
+    }
+}
+
