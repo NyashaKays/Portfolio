@@ -8,7 +8,7 @@
 body{
     margin: 0;
     display: block;
-    width: 100vw;
+    width: 100%;
     background: #323232;
     background: -webkit-linear-gradient(0deg, #323232 0%, #000000 100%);
     background: linear-gradient(0deg, #323232 0%, #000000 100%);
@@ -325,6 +325,10 @@ footer .copyrights{
     opacity: 45%;
 }
 
+@media(max-width:767px){
+
+}
+
 .Services{
     display: flex;
     align-items: center;
@@ -586,6 +590,10 @@ form textarea:focus{
     margin-left: 5px;
 }
 
+.mobile{
+    display: none;
+}
+
 form textarea{
     background: transparent;
     border: 2px solid aliceblue;
@@ -605,6 +613,32 @@ form button{
 form button:hover{
     cursor: pointer;
     background-color: #e94b0c;
+}
+
+@media(max-width: 767px){
+    form{
+        width: 320px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    form .inputs{
+        display: block;
+        text-align: center;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
 }
 
 
