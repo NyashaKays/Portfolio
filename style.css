@@ -151,7 +151,7 @@ footer .copyrights{
     margin: 15px;
 }
 
-@media(max-width: 767px){
+@media(max-width: 821px){
     body{
         width: 100vw;
     }
@@ -161,7 +161,7 @@ footer .copyrights{
     }
 }
 
-@media(min-width: 767px){
+@media(min-width: 821px){
     .mobile-nav{
         display: none;
     }
@@ -325,7 +325,7 @@ footer .copyrights{
     opacity: 45%;
 }
 
-@media(max-width:767px){
+@media(max-width:821px){
 
     .content{
         width: 350px;
@@ -633,7 +633,7 @@ form button:hover{
     background-color: #e94b0c;
 }
 
-@media(max-width: 767px){
+@media(max-width: 821px){
     form{
         width: 320px;
         padding: 5px;
@@ -722,7 +722,7 @@ form button:hover{
     display: flex;
 }
 
-@media(max-width: 767px){
+@media(max-width: 821px){
     h1{
         font-size: 1.5em;
 
