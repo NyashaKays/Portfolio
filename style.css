@@ -327,6 +327,23 @@ footer .copyrights{
 
 @media(max-width:767px){
 
+    .content{
+        width: 350px;
+    }
+
+    .content h1{
+        font-size: 1.8em;
+        width: 20ch;
+    }
+
+    .content p{
+        font-size: 0.8em;
+        width: 50ch;
+    }
+
+    .profile-pic{
+        height: 30em;
+    }
 }
 
 .Services{
