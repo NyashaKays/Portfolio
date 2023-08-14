@@ -24,6 +24,7 @@ header{
     align-items: center;
     justify-content: space-between;
     width: 100vw;
+    z-index: 500;
 }
 
 .logo-img{
@@ -112,7 +113,6 @@ nav ul li a .contact-btn{
     left: 100%;
     width: 100vw;
     min-height: 100vh;
-    margin-top: 70px;
     z-index: 98;
     background-color: #000000;
     padding-top: 120px;
@@ -541,7 +541,8 @@ footer .copyrights{
 }
 
 form{
-    width: 30%;
+    width: fit-content;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -635,7 +636,8 @@ form button:hover{
 
 @media(max-width: 821px){
     form{
-        width: 320px;
+        min-width: 320px;
+        width: fit-content;
         padding: 5px;
         display: flex;
         align-items: center;
