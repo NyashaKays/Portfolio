@@ -274,8 +274,9 @@ footer .copyrights {
 .social-container {
   margin-top: 15px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   min-width: 50%;
   width: fit-content;
 }
