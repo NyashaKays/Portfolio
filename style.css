@@ -285,11 +285,25 @@ footer .copyrights {
   place-items: center;
   min-height: 3em;
   min-width: 3em;
-  height: 3em;
-  width: 3em;
+  height: 4em;
+  width: 4em;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.05);
   margin: 5px;
+}
+.fa-html5,
+.fa-git-alt {
+  color: #e92c0c;
+}
+.fa-css3-alt,
+.fa-python {
+  color: #3939ff;
+}
+.fa-js {
+  color: yellow;
+}
+.fa-node {
+  color: green;
 }
 
 .social-btn a {
