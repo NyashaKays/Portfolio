@@ -271,6 +271,10 @@ footer .copyrights {
   }
 }
 
+#restricted {
+  cursor: not-allowed;
+}
+
 .social-container {
   margin-top: 15px;
   display: flex;
@@ -305,6 +309,9 @@ footer .copyrights {
 }
 .fa-node {
   color: green;
+}
+.fa-wordpress {
+  color: #3939ff;
 }
 
 .social-btn a {
